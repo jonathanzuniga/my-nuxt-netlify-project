@@ -51,7 +51,7 @@ html {
 }
 </style>
 
-<script>
+<!-- <script>
   if (window.netlifyIdentity) {
     window.netlifyIdentity.on("init", user => {
       if (!user) {
@@ -61,4 +61,4 @@ html {
       }
     });
   }
-</script>
+</script> -->
