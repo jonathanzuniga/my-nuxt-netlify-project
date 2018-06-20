@@ -1,7 +1,7 @@
 
 <template>
 	<article>
-		<img v-show="thumbnail" :src="thumbnail">
+		<img v-if="thumbnail" :src="thumbnail">
 
 		<h1>{{ title }}</h1>
 
@@ -16,9 +16,14 @@
 	export default {
 
 		data() {
+
 			return {
-				thumbnail: ''
+				thumbnail: '',
+				title: '',
+				date: '',
+				body: ''
 			}
+
 		},
 
 		async asyncData( { params } ) {
