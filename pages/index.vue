@@ -1,3 +1,4 @@
+
 <template>
 	<section>
 		<h1>Blog</h1>
