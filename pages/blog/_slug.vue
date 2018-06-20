@@ -7,13 +7,19 @@
 
 		<small>{{ date }}</small>
 
-		<p>{{ body }}</p>
+		<vue-markdown>{{ body }}</vue-markdown>
 	</article>
 </template>
 
 <script>
 
+	import VueMarkdown from 'vue-markdown';
+
 	export default {
+
+		components: {
+			VueMarkdown
+		},
 
 		data() {
 

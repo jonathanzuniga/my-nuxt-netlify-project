@@ -7,7 +7,8 @@ var path = require('path');
 // The Nuxt routes are generate by Nuxt automatically based on the pages folder.
 
 var dynamicRoutes = getDynamicPaths({
-  '/blog': 'blog/posts/*.json'
+  '/blog': 'blog/posts/*.json',
+  '/about': 'about/*.json'
 });
 
 module.exports = {
@@ -33,6 +34,8 @@ module.exports = {
   ** Build configuration
   */
   build: {
+    vendor: ['vue-markdown'],
+
     /*
     ** Run ESLint on save
     */
