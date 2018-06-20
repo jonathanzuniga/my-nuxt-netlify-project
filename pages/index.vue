@@ -2,6 +2,7 @@
 <template>
 	<section>
 		<h1>Blog</h1>
+		
 		<ul>
 			<li v-for="post in posts" :key="post.date">
 				<nuxt-link :to="post._path">
