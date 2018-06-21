@@ -10,8 +10,8 @@
 			<input type="hidden" name="form-name" value="contact">
 
 			<p class="hidden">     
-					<label>Don’t fill this out: <input name="bot-field"></label>
-				</p>
+				<label>Don’t fill this out: <input name="bot-field"></label>
+			</p>
 
 			<p>
 				<label for="name">
