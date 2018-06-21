@@ -21,17 +21,6 @@
 			VueMarkdown
 		},
 
-		data() {
-
-			return {
-				thumbnail: '',
-				title: '',
-				date: '',
-				body: ''
-			}
-
-		},
-
 		async asyncData( { params } ) {
 
 			// const postPromise = process.BROWSER_BUILD
@@ -41,6 +30,9 @@
 			//     );
 
 			let post = await import( '~/content/blog/posts/' + params.slug + '.json' );
+
+			if ( ! post.thumbnail )
+				Object.assign( post, { thumbnail: '' } );
 
 			return post;
 
