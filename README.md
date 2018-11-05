@@ -1,5 +1,7 @@
 # my-nuxt-netlify-project
 
+https://wonderful-brown-e64715.netlify.com/
+
 > Nuxt.js project
 
 ## Build Setup
